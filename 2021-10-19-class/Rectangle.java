@@ -4,11 +4,14 @@ public class Rectangle
     private double width;
     private String color;
 
+    private static int numberOfRectangles;
+
     public Rectangle()
     {
         length = 1;
         width = 2;
         color = "Blue";
+        numberOfRectangles++;
     }
 
     public Rectangle(int len, int wid, String col)
@@ -16,6 +19,7 @@ public class Rectangle
         length = len;
         width = wid;
         color = col;
+        numberOfRectangles++;
     }
 
     public void setLength(int len)
@@ -46,5 +50,10 @@ public class Rectangle
     public String getColor()
     {
         return color;
+    }
+
+    public double getPerimeter()
+    {
+        return length * width;
     }
 }
