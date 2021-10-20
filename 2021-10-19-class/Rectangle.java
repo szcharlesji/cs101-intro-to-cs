@@ -4,7 +4,7 @@ public class Rectangle
     private double width;
     private String color;
 
-    private static int numberOfRectangles;
+    private static int numberOfRectangles = 0;
 
     public Rectangle()
     {
