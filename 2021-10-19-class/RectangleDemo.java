@@ -4,5 +4,6 @@ public class RectangleDemo {
         Rectangle r1 = new Rectangle();
 
         r1.setColor("Brown");
+        r1.print();
     }
 }
